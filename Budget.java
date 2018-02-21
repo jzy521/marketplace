@@ -21,6 +21,7 @@ public class Budget {
 		
 	public static void main(String[] args)  {
 		int[] vals = new int[] {55, 100, 10, 150, 123};
+		//running time is nlog(n) for sort
 		 Arrays.sort(vals);
 		Map<Integer, String> pairs = new HashMap<Integer, String>();
 		pairs.put(55, "Backpack");
@@ -35,7 +36,7 @@ public class Budget {
 	}
 	
 	public static String[] calcTwo(int[] arr, Map<Integer, String> pairs, int target) {
-		//running time nlog(n)
+		//running time is n for this method
 		
 		int low = 0;
 		int high = arr.length - 1;
